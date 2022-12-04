@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Kanit', sans-serif;
+}
+
+table,th {
+    border: 1px solid white;
+    border-collapse: collapse;
+    background-color: rgb(224, 160, 250);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 18px;
+}
+
+td {
+    background-color: rgb(230, 212, 233);
+    border-collapse: collapse;
+    border: 1px;
+    padding: 0.5rem;
+    border: 1px solid white;
+}
+input {
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 20rem;
+    border: 1px solid rgb(175, 96, 171) ;
+}

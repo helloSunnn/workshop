@@ -1,0 +1,26 @@
+<body>
+    <h1>Please Key Id Movie</h1>
+
+    <!-- รับค่าจากผู้ใช้มาไว้ในตัวแปร movId -->
+    <input [(ngModel)]="movId">  
+
+    <!-- แสดงดาต้าที่ส่งมาจาก child.component -->
+    <app-child (data)="getRes($event)" [id101] ="movId"  ></app-child>
+
+    <h2>Result Movie</h2>
+    <table style="width:100%">
+        <tr>
+            <th>Movieid</th>
+            <th>NameMovie</th>
+            <th>TypeMovie</th>
+            <th>MoviePrice</th>
+        </tr>
+        <tr>
+            <td>{{result.Movieid}}</td>
+            <td>{{result.NameMovie}}</td>
+            <td>{{result.TypeMovie}}</td>
+            <td>{{result.MoviePrice}}</td>
+            
+        </tr>
+    </table>
+</body>
